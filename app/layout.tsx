@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import "/styles/globals.css";
+import "@/styles/globals.css";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/SideBar/app-sidebar";
 
 export const metadata: Metadata = {
   title: "AUTOLABS",
@@ -13,7 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body>
+        <SidebarProvider>
+          <AppSidebar />
+
+          <SidebarInset>{children}</SidebarInset>
+        </SidebarProvider>
+      </body>
     </html>
   );
 }
