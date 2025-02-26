@@ -11,7 +11,7 @@ const data = {
       title: "Chart",
       url: "/Dashboard/AllChart",
       icon: ChartLine,
-      isActive: true,
+      isActive: false,
       items: [
         {
           title: "All Chart",
@@ -47,7 +47,7 @@ const data = {
       title: "3D",
       url: "/Dashboard/GLTF",
       icon: Box,
-      isActive: true,
+      isActive: false,
       items: [
         {
           title: "GLTF",
