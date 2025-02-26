@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   Breadcrumb,
@@ -10,6 +11,8 @@ import {
 } from "@/components/ui/breadcrumb";
 
 const breadcrumbMap: Record<string, { main: string; sub?: string }> = {
+  "/Dashboard": { main: "Dashboard" },
+
   // Charts
   "/Dashboard/AreaChart": { main: "Dashboard", sub: "Area Chart" },
   "/Dashboard/BarChart": { main: "Dashboard", sub: "Bar Chart" },
@@ -33,13 +36,20 @@ function Header() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem className="hidden md:block">
-              {currentBreadcrumb.main}
+              <Link href={"/" + currentBreadcrumb.main}>
+                {currentBreadcrumb.main}
+              </Link>
             </BreadcrumbItem>
-            <BreadcrumbSeparator className="hidden md:block" />
 
-            <BreadcrumbItem>
-              <BreadcrumbPage>{currentBreadcrumb.sub}</BreadcrumbPage>
-            </BreadcrumbItem>
+            {currentBreadcrumb.sub && (
+              <>
+                <BreadcrumbSeparator className="hidden md:block" />
+
+                <BreadcrumbItem>
+                  <BreadcrumbPage>{currentBreadcrumb.sub}</BreadcrumbPage>
+                </BreadcrumbItem>
+              </>
+            )}
           </BreadcrumbList>
         </Breadcrumb>
       </div>
