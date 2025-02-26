@@ -1,12 +1,7 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import ComingSoon from "@/components/ComingSoon";
 
 function MainPage() {
-  return (
-    <Link href="/Dashboard">
-      <Button>대시보드</Button>
-    </Link>
-  );
+  return <ComingSoon />;
 }
 
 export default MainPage;
