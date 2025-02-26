@@ -9,49 +9,49 @@ const data = {
   navMain: [
     {
       title: "Chart",
-      url: "/Charts/AreaChart",
+      url: "/Dashboard/AreaChart",
       icon: ChartLine,
       isActive: true,
       items: [
         {
           title: "Area Chart",
-          url: "/Charts/AreaChart",
+          url: "/Dashboard/AreaChart",
         },
         {
           title: "Bar Chart",
-          url: "/Charts/BarChart",
+          url: "/Dashboard/BarChart",
         },
         {
           title: "Line Chart",
-          url: "/Charts/LineChart",
+          url: "/Dashboard/LineChart",
         },
         {
           title: "Pie Chart",
-          url: "/Charts/PieChart",
+          url: "/Dashboard/PieChart",
         },
         {
           title: "Radial Chart",
-          url: "/Charts/RadialChart",
+          url: "/Dashboard/RadialChart",
         },
         {
           title: "Tooltip Chart",
-          url: "/Charts/TooltipChart",
+          url: "/Dashboard/TooltipChart",
         },
       ],
     },
     {
       title: "3D",
-      url: "/3D/GLTF",
+      url: "/Dashboard/GLTF",
       icon: Box,
       isActive: true,
       items: [
         {
           title: "GLTF",
-          url: "/3D/GLTF",
+          url: "/Dashboard/GLTF",
         },
         {
           title: "Text",
-          url: "/3D/Text",
+          url: "/Dashboard/Text",
         },
       ],
     },

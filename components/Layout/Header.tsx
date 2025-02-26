@@ -11,21 +11,21 @@ import {
 
 const breadcrumbMap: Record<string, { main: string; sub?: string }> = {
   // Charts
-  "/Charts/AreaChart": { main: "Charts", sub: "Area Chart" },
-  "/Charts/BarChart": { main: "Charts", sub: "Bar Chart" },
-  "/Charts/LineChart": { main: "Charts", sub: "Line Chart" },
-  "/Charts/PieChart": { main: "Charts", sub: "Pie Chart" },
-  "/Charts/RadialChart": { main: "Charts", sub: "Radial Chart" },
-  "/Charts/TooltipChart": { main: "Charts", sub: "Tooltip Chart" },
+  "/Dashboard/AreaChart": { main: "Dashboard", sub: "Area Chart" },
+  "/Dashboard/BarChart": { main: "Dashboard", sub: "Bar Chart" },
+  "/Dashboard/LineChart": { main: "Dashboard", sub: "Line Chart" },
+  "/Dashboard/PieChart": { main: "Dashboard", sub: "Pie Chart" },
+  "/Dashboard/RadialChart": { main: "Dashboard", sub: "Radial Chart" },
+  "/Dashboard/TooltipChart": { main: "Dashboard", sub: "Tooltip Chart" },
 
   // 3D
-  "/3D/GLTF": { main: "3D", sub: "GLTF" },
-  "/3D/Text": { main: "3D", sub: "Text" },
+  "/Dashboard/GLTF": { main: "Dashboard", sub: "GLTF" },
+  "/Dashboard/Text": { main: "Dashboard", sub: "Text" },
 };
 
 function Header() {
   const router = usePathname();
-  const currentBreadcrumb = breadcrumbMap[router] || { main: "", sub: "" };
+  const currentBreadcrumb = breadcrumbMap[router];
 
   return (
     <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">

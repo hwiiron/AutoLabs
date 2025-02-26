@@ -22,7 +22,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       className="h-screen sticky top-0 mo:w-[170px]"
     >
       <SidebarHeader>
-        <Link href={"/"} className="relative w-[120px]">
+        <Link href={"/Dashboard"} className="relative w-[120px]">
           <Logo />
         </Link>
       </SidebarHeader>
