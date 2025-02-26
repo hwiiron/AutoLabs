@@ -1,4 +1,4 @@
-import { ChartLine } from "lucide-react";
+import { Box, ChartLine } from "lucide-react";
 
 const data = {
   user: {
@@ -36,6 +36,22 @@ const data = {
         {
           title: "Tooltip Chart",
           url: "/Charts/TooltipChart",
+        },
+      ],
+    },
+    {
+      title: "3D",
+      url: "/3D/GLTF",
+      icon: Box,
+      isActive: true,
+      items: [
+        {
+          title: "GLTF",
+          url: "/3D/GLTF",
+        },
+        {
+          title: "Text",
+          url: "/3D/Text",
         },
       ],
     },
