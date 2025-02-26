@@ -7,7 +7,9 @@ function GLTFPage() {
       <Header />
 
       <Container>
-        <div>GLTF</div>
+        <div className="border w-[80vw] h-[80vh] overflow-hidden">
+          <iframe src="/three/gltf.html" className="size-full" />
+        </div>
       </Container>
     </>
   );

@@ -7,7 +7,9 @@ function TextPage() {
       <Header />
 
       <Container>
-        <div>text</div>
+        <div className="border w-[80vw] h-[80vh] overflow-hidden">
+          <iframe src="/three/text.html" className="size-full" />
+        </div>
       </Container>
     </>
   );

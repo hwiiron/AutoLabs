@@ -4,6 +4,7 @@ import * as React from "react";
 import data from "@/mocks/sidebarData";
 import Link from "next/link";
 import Logo from "@/public/images/icon-logo-gradient.svg";
+import { Earth } from "lucide-react";
 import { NavMain } from "@/components/SideBar/nav-main";
 import { NavUser } from "@/components/SideBar/nav-user";
 import {
@@ -14,7 +15,6 @@ import {
   SidebarMenuButton,
   SidebarRail,
 } from "@/components/ui/sidebar";
-import { Earth } from "lucide-react";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
