@@ -11,8 +11,10 @@ import {
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
+  SidebarMenuButton,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import { Earth } from "lucide-react";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -26,6 +28,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <Logo />
         </Link>
       </SidebarHeader>
+
+      <div className="flex flex-col gap-2 p-2">
+        <Link href={"/"}>
+          <SidebarMenuButton tooltip="AutoLabs">
+            <Earth />
+            <span>AutoLabs</span>
+          </SidebarMenuButton>
+        </Link>
+      </div>
 
       <SidebarContent>
         <NavMain items={data.navMain} />
