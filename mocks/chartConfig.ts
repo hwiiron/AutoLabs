@@ -58,9 +58,20 @@ const barLineChartConfig = {
   },
 } satisfies ChartConfig;
 
+const RadialChartConfig = {
+  visitors: {
+    label: "Visitors",
+  },
+  safari: {
+    label: "Safari",
+    color: "hsl(var(--chart-2))",
+  },
+} satisfies ChartConfig;
+
 export {
   chartConfig,
   interactiveChartConfig,
   mixedChartConfig,
   barLineChartConfig,
+  RadialChartConfig,
 };

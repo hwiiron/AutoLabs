@@ -1,6 +1,6 @@
 "use client";
 
-import { DotChartType } from "@/types/chart.type";
+import { DotChartProps } from "@/types/chart.type";
 import { chartData } from "@/mocks/chartData";
 import { chartConfig } from "@/mocks/chartConfig";
 import { CartesianGrid, LabelList, Line, LineChart, XAxis } from "recharts";
@@ -17,7 +17,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 
-function DotChart({ type, label }: DotChartType) {
+function DotChart({ type, label }: DotChartProps) {
   return (
     <Card>
       <CardHeader>

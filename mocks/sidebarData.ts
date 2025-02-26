@@ -9,10 +9,14 @@ const data = {
   navMain: [
     {
       title: "Chart",
-      url: "/Dashboard/AreaChart",
+      url: "/Dashboard/AllChart",
       icon: ChartLine,
       isActive: true,
       items: [
+        {
+          title: "All Chart",
+          url: "/Dashboard/AllChart",
+        },
         {
           title: "Area Chart",
           url: "/Dashboard/AreaChart",
@@ -30,12 +34,12 @@ const data = {
           url: "/Dashboard/PieChart",
         },
         {
-          title: "Radial Chart",
-          url: "/Dashboard/RadialChart",
+          title: "Radar Chart",
+          url: "/Dashboard/RadarChart",
         },
         {
-          title: "Tooltip Chart",
-          url: "/Dashboard/TooltipChart",
+          title: "Radial Chart",
+          url: "/Dashboard/RadialChart",
         },
       ],
     },

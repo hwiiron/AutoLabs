@@ -1,9 +1,34 @@
-interface ChartType {
+interface ChartProps {
   type: "natural" | "linear" | "step";
 }
 
-interface DotChartType extends ChartType {
+interface DotChartProps extends ChartProps {
   label: boolean;
 }
 
-export type { ChartType, DotChartType };
+interface PieChartProps {
+  label?: boolean;
+  insideLabel?: boolean;
+}
+
+interface DonutChartProps {
+  label?: boolean;
+  innerText?: boolean;
+}
+
+interface GridChartProps {
+  circle?: boolean;
+}
+
+interface RadialChartProps {
+  label?: boolean;
+}
+
+export type {
+  ChartProps,
+  DotChartProps,
+  PieChartProps,
+  DonutChartProps,
+  GridChartProps,
+  RadialChartProps,
+};

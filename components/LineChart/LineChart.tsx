@@ -1,6 +1,6 @@
 "use client";
 
-import { ChartType } from "@/types/chart.type";
+import { ChartProps } from "@/types/chart.type";
 import { barLineChartData } from "@/mocks/chartData";
 import { barLineChartConfig } from "@/mocks/chartConfig";
 import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
@@ -17,7 +17,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 
-function Chart({ type }: ChartType) {
+function Chart({ type }: ChartProps) {
   return (
     <Card>
       <CardHeader>

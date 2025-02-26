@@ -7,6 +7,15 @@ const chartData = [
   { month: "June", desktop: 214, mobile: 140 },
 ];
 
+const chartData2 = [
+  { month: "January", desktop: 186, mobile: 160 },
+  { month: "February", desktop: 185, mobile: 170 },
+  { month: "March", desktop: 207, mobile: 180 },
+  { month: "April", desktop: 173, mobile: 160 },
+  { month: "May", desktop: 160, mobile: 190 },
+  { month: "June", desktop: 174, mobile: 204 },
+];
+
 const interactiveChartData = [
   { date: "2024-04-01", desktop: 222, mobile: 150 },
   { date: "2024-04-02", desktop: 97, mobile: 180 },
@@ -118,4 +127,18 @@ const barLineChartData = [
   { month: "June", desktop: 214 },
 ];
 
-export { chartData, interactiveChartData, mixedChartData, barLineChartData };
+const RadialChartData = [
+  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
+];
+
+const StackedChartData = [{ month: "january", desktop: 1260, mobile: 570 }];
+
+export {
+  chartData,
+  chartData2,
+  interactiveChartData,
+  mixedChartData,
+  barLineChartData,
+  RadialChartData,
+  StackedChartData,
+};

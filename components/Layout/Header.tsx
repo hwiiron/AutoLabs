@@ -14,12 +14,13 @@ const breadcrumbMap: Record<string, { main: string; sub?: string }> = {
   "/Dashboard": { main: "Dashboard" },
 
   // Charts
+  "/Dashboard/AllChart": { main: "Dashboard", sub: "All Chart" },
   "/Dashboard/AreaChart": { main: "Dashboard", sub: "Area Chart" },
   "/Dashboard/BarChart": { main: "Dashboard", sub: "Bar Chart" },
   "/Dashboard/LineChart": { main: "Dashboard", sub: "Line Chart" },
   "/Dashboard/PieChart": { main: "Dashboard", sub: "Pie Chart" },
-  "/Dashboard/RadialChart": { main: "Dashboard", sub: "Radial Chart" },
-  "/Dashboard/TooltipChart": { main: "Dashboard", sub: "Tooltip Chart" },
+  "/Dashboard/RadarChart": { main: "Dashboard", sub: "Radial Chart" },
+  "/Dashboard/RadialChart": { main: "Dashboard", sub: "Tooltip Chart" },
 
   // 3D
   "/Dashboard/GLTF": { main: "Dashboard", sub: "GLTF" },

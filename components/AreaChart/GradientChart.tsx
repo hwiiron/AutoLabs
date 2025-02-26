@@ -1,6 +1,6 @@
 "use client";
 
-import { ChartType } from "@/types/chart.type";
+import { ChartProps } from "@/types/chart.type";
 import { chartData } from "@/mocks/chartData";
 import { chartConfig } from "@/mocks/chartConfig";
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
@@ -17,7 +17,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 
-function GradientChart({ type }: ChartType) {
+function GradientChart({ type }: ChartProps) {
   return (
     <Card>
       <CardHeader>
