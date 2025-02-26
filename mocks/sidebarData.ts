@@ -2,8 +2,8 @@ import { Box, ChartLine } from "lucide-react";
 
 const data = {
   user: {
-    name: "Name",
-    email: "Email",
+    name: "AutoLabs",
+    email: "AutoLabs@atlabs.com",
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
