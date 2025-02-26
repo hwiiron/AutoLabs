@@ -16,7 +16,11 @@ import {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="none" {...props} className="h-screen">
+    <Sidebar
+      collapsible="none"
+      {...props}
+      className="h-screen sticky top-0 mo:w-[170px]"
+    >
       <SidebarHeader>
         <Link href={"/"} className="relative w-[120px]">
           <Logo />
