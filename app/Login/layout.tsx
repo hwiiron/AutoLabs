@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import "@/styles/globals.css";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/SideBar/app-sidebar";
 
 export const metadata: Metadata = {
   title: "AutoLabs - Login",
@@ -17,8 +16,6 @@ export default function RootLayout({
     <html lang="ko">
       <body>
         <SidebarProvider>
-          <AppSidebar />
-
           <SidebarInset>{children}</SidebarInset>
         </SidebarProvider>
       </body>
