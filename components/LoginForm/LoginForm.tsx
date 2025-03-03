@@ -98,6 +98,7 @@ export function LoginForm({
               alt="Image"
               className="absolute h-full w-full object-cover"
               fill
+              priority
             />
           </div>
         </CardContent>
