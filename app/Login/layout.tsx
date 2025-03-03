@@ -4,7 +4,7 @@ import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/SideBar/app-sidebar";
 
 export const metadata: Metadata = {
-  title: "AutoLabs - 로그인",
+  title: "AutoLabs - Login",
   description: "AI 기술을 활용한 모듈형 스마트팩토리 플랫폼",
 };
 
