@@ -38,11 +38,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </Link>
       </div>
 
-      <SidebarContent>
-        <NavMain items={data.navMain} />
+      <SidebarContent className="flex-0">
+        <NavMain title="Menu" items={data.nav} />
       </SidebarContent>
 
-      <SidebarFooter>
+      <SidebarContent className="flex-0 mt-[60px]">
+        <NavMain title="Reference" items={data.navReference} />
+      </SidebarContent>
+
+      <SidebarFooter className="mt-auto">
         <NavUser user={data.user} />
       </SidebarFooter>
 
