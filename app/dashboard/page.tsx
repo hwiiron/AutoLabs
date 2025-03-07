@@ -1,9 +1,10 @@
 "use client";
 
+import Header from "@/components/Layout/Header";
 import Container from "@/components/Layout/Container";
 import DonutChart from "@/components/PieChart/DonutChart";
 import TextChart from "@/components/RadialChart/TextChart";
-import Header from "@/components/Layout/Header";
+import InspectionSummaryChart from "@/components/MainDashboard/InspectionSummaryChart";
 
 const mixedChartData = [
   { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
@@ -37,6 +38,8 @@ function DashBoardPage() {
             innerText={true}
           />
         </div>
+
+        <InspectionSummaryChart />
       </Container>
     </>
   );
