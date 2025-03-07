@@ -1,4 +1,10 @@
-import { User, SearchCheck, ChartLine, Box } from "lucide-react";
+import {
+  User,
+  LayoutDashboard,
+  SearchCheck,
+  ChartLine,
+  Box,
+} from "lucide-react";
 
 const data = {
   user: {
@@ -25,10 +31,15 @@ const data = {
   ],
   nav: [
     {
+      title: "대시보드",
+      url: "/dashboard",
+      icon: LayoutDashboard,
+    },
+    {
       title: "검수",
       url: "#",
       icon: SearchCheck,
-      isActive: true,
+      isActive: false,
       items: [
         {
           title: "자동 모드",
