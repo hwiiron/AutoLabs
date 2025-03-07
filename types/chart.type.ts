@@ -2,6 +2,11 @@ interface ChartProps {
   type: "natural" | "linear" | "step";
 }
 
+interface ChartInfoProps {
+  title?: string;
+  description?: string;
+}
+
 interface DotChartProps extends ChartProps {
   label: boolean;
 }
@@ -11,7 +16,8 @@ interface PieChartProps {
   insideLabel?: boolean;
 }
 
-interface DonutChartProps {
+interface DonutChartProps extends ChartInfoProps {
+  data: { browser: string; visitors: number; fill: string }[];
   label?: boolean;
   innerText?: boolean;
 }
@@ -26,6 +32,7 @@ interface RadialChartProps {
 
 export type {
   ChartProps,
+  ChartInfoProps,
   DotChartProps,
   PieChartProps,
   DonutChartProps,

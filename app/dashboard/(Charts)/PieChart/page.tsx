@@ -1,3 +1,4 @@
+import { mixedChartData } from "@/mocks/chartData";
 import Container from "@/components/Layout/Container";
 import Header from "@/components/Layout/Header";
 import Chart from "@/components/PieChart/PieChart";
@@ -16,8 +17,8 @@ function PieChart() {
         </div>
 
         <div className="grid auto-rows-min gap-4 md:grid-cols-2">
-          <DonutChart label={true} />
-          <DonutChart innerText={true} />
+          <DonutChart data={mixedChartData} label={true} />
+          <DonutChart data={mixedChartData} innerText={true} />
         </div>
       </Container>
     </>

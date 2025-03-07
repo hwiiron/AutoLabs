@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/breadcrumb";
 
 const breadcrumbMap: Record<string, { main: string; sub?: string }> = {
-  "/dashboard": { main: "대시보드" },
+  "/dashboard": { main: "Home" },
 
   // AutoMode
   "/auto-mode": { main: "자동모드" },

@@ -1,3 +1,4 @@
+import { mixedChartData } from "@/mocks/chartData";
 import Header from "@/components/Layout/Header";
 import Container from "@/components/Layout/Container";
 import AreaChart from "@/components/AreaChart/AreaChart";
@@ -76,8 +77,8 @@ function AllChart() {
         </div>
 
         <div className="grid auto-rows-min gap-4 md:grid-cols-2">
-          <PieDonutChart label={true} />
-          <PieDonutChart innerText={true} />
+          <PieDonutChart data={mixedChartData} label={true} />
+          <PieDonutChart data={mixedChartData} innerText={true} />
         </div>
 
         {/* Radar Chart */}

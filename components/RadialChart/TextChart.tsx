@@ -1,5 +1,6 @@
 "use client";
 
+import { ChartInfoProps } from "@/types/chart.type";
 import { RadialChartData } from "@/mocks/chartData";
 import { RadialChartConfig } from "@/mocks/chartConfig";
 import {
@@ -18,12 +19,15 @@ import {
 } from "@/components/ui/card";
 import { ChartContainer } from "@/components/ui/chart";
 
-function TextChart() {
+function TextChart({
+  title = "title",
+  description = "description",
+}: ChartInfoProps) {
   return (
     <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Title</CardTitle>
-        <CardDescription>Description</CardDescription>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer

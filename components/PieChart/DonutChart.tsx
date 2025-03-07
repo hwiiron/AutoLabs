@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 import { DonutChartProps } from "@/types/chart.type";
-import { mixedChartData } from "@/mocks/chartData";
+// import { mixedChartData } from "@/mocks/chartData";
 import { mixedChartConfig } from "@/mocks/chartConfig";
 import { Label, Pie, PieChart } from "recharts";
 import {
@@ -18,16 +18,22 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 
-function DonutChart({ label, innerText }: DonutChartProps) {
+function DonutChart({
+  data,
+  title = "title",
+  description = "description",
+  label,
+  innerText,
+}: DonutChartProps) {
   const totalVisitors = useMemo(() => {
-    return mixedChartData.reduce((acc, curr) => acc + curr.visitors, 0);
+    return data.reduce((acc, curr) => acc + curr.visitors, 0);
   }, []);
 
   return (
     <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Title</CardTitle>
-        <CardDescription>Description</CardDescription>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer
@@ -40,7 +46,7 @@ function DonutChart({ label, innerText }: DonutChartProps) {
               content={<ChartTooltipContent hideLabel />}
             />
             <Pie
-              data={mixedChartData}
+              data={data}
               dataKey="visitors"
               nameKey="browser"
               innerRadius={60}
