@@ -11,20 +11,23 @@ import {
 } from "@/components/ui/breadcrumb";
 
 const breadcrumbMap: Record<string, { main: string; sub?: string }> = {
-  "/Dashboard": { main: "Dashboard" },
+  "/dashboard": { main: "대시보드" },
+
+  // AutoMode
+  "/automode": { main: "자동모드" },
 
   // Charts
-  "/Dashboard/AllChart": { main: "Dashboard", sub: "All Chart" },
-  "/Dashboard/AreaChart": { main: "Dashboard", sub: "Area Chart" },
-  "/Dashboard/BarChart": { main: "Dashboard", sub: "Bar Chart" },
-  "/Dashboard/LineChart": { main: "Dashboard", sub: "Line Chart" },
-  "/Dashboard/PieChart": { main: "Dashboard", sub: "Pie Chart" },
-  "/Dashboard/RadarChart": { main: "Dashboard", sub: "Radial Chart" },
-  "/Dashboard/RadialChart": { main: "Dashboard", sub: "Tooltip Chart" },
+  "/dashboard/AllChart": { main: "대시보드", sub: "All Chart" },
+  "/dashboard/AreaChart": { main: "대시보드", sub: "Area Chart" },
+  "/dashboard/BarChart": { main: "대시보드", sub: "Bar Chart" },
+  "/dashboard/LineChart": { main: "대시보드", sub: "Line Chart" },
+  "/dashboard/PieChart": { main: "대시보드", sub: "Pie Chart" },
+  "/dashboard/RadarChart": { main: "대시보드", sub: "Radial Chart" },
+  "/dashboard/RadialChart": { main: "대시보드", sub: "Tooltip Chart" },
 
   // 3D
-  "/Dashboard/GLTF": { main: "Dashboard", sub: "GLTF" },
-  "/Dashboard/Text": { main: "Dashboard", sub: "Text" },
+  "/dashboard/GLTF": { main: "대시보드", sub: "GLTF" },
+  "/dashboard/Text": { main: "대시보드", sub: "Text" },
 };
 
 function Header() {

@@ -3,10 +3,11 @@
 import * as React from "react";
 import data from "@/mocks/sidebarData";
 import Link from "next/link";
-import Logo from "@/public/images/icon-logo-gradient.svg";
-import { Earth } from "lucide-react";
+// import Logo from "@/public/images/icon-logo-gradient.svg";
+import { ChevronRight, LayoutDashboard } from "lucide-react";
 import { NavMain } from "@/components/SideBar/nav-main";
 import { NavUser } from "@/components/SideBar/nav-user";
+import { UserSwitcher } from "@/components/SideBar/user-switcher";
 import {
   Sidebar,
   SidebarContent,
@@ -24,16 +25,18 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       className="h-screen sticky top-0 mo:w-[170px]"
     >
       <SidebarHeader>
-        <Link href={"/Dashboard"} className="relative w-[120px]">
+        <UserSwitcher users={data.users} />
+        {/* <Link href={"/Dashboard"} className="relative w-[120px]">
           <Logo />
-        </Link>
+        </Link> */}
       </SidebarHeader>
 
       <div className="flex flex-col gap-2 p-2">
-        <Link href={"/"}>
-          <SidebarMenuButton tooltip="AutoLabs">
-            <Earth />
-            <span>AutoLabs</span>
+        <Link href={"/dashboard"}>
+          <SidebarMenuButton tooltip="대시보드">
+            <LayoutDashboard />
+            <span>대시보드</span>
+            <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
           </SidebarMenuButton>
         </Link>
       </div>
