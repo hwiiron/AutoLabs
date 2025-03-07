@@ -5,7 +5,7 @@ import { AppSidebar } from "@/components/SideBar/app-sidebar";
 
 export const metadata: Metadata = {
   title: "AutoLabs - Dashboard",
-  description: "AI 기술을 활용한 모듈형 스마트팩토리 플랫폼",
+  description: "AI 기술을 활용한 섬유 결함 검수 플랫폼",
 };
 
 export default function RootLayout({
