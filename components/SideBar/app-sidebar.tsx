@@ -26,7 +26,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     >
       <SidebarHeader>
         <UserSwitcher users={data.users} />
-        {/* <Link href={"/Dashboard"} className="relative w-[120px]">
+        {/* <Link href={"/dashboard"} className="relative w-[120px]">
           <Logo />
         </Link> */}
       </SidebarHeader>
