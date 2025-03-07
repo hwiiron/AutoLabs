@@ -28,15 +28,15 @@ const data = {
       title: "검수",
       url: "#",
       icon: SearchCheck,
-      isActive: false,
+      isActive: true,
       items: [
         {
           title: "자동 모드",
-          url: "/automode",
+          url: "/auto-mode",
         },
         {
           title: "수동 도움 모드",
-          url: "#",
+          url: "/manual-mode",
         },
       ],
     },

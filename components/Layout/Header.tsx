@@ -14,7 +14,10 @@ const breadcrumbMap: Record<string, { main: string; sub?: string }> = {
   "/dashboard": { main: "대시보드" },
 
   // AutoMode
-  "/automode": { main: "자동모드" },
+  "/auto-mode": { main: "자동모드" },
+
+  // ManualMode
+  "/manual-mode": { main: "수동모드" },
 
   // Charts
   "/dashboard/AllChart": { main: "대시보드", sub: "All Chart" },
