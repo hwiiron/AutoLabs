@@ -39,7 +39,7 @@ const data = {
       title: "검수",
       url: "#",
       icon: SearchCheck,
-      isActive: false,
+      isActive: true,
       items: [
         {
           title: "자동 모드",

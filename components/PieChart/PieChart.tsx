@@ -1,6 +1,5 @@
 "use client";
 
-import { PieChartProps } from "@/types/chart.type";
 import { mixedChartConfig } from "@/mocks/chartConfig";
 import { LabelList, Pie, PieChart } from "recharts";
 import {
@@ -22,7 +21,13 @@ function Chart({
   label,
   insideLabel,
   data,
-}: PieChartProps) {
+}: {
+  title?: string;
+  description?: string;
+  label?: boolean;
+  insideLabel?: boolean;
+  data: { browser: string; visitors: number; fill: string }[];
+}) {
   return (
     <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">

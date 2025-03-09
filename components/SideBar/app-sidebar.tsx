@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import data from "@/mocks/sidebarData";
-// import Logo from "@/public/images/icon-logo-gradient.svg";
 import { NavMain } from "@/components/SideBar/nav-main";
 import { NavUser } from "@/components/SideBar/nav-user";
 import { UserSwitcher } from "@/components/SideBar/user-switcher";
@@ -23,17 +22,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     >
       <SidebarHeader>
         <UserSwitcher users={data.users} />
-        {/* <Link href={"/dashboard"} className="relative w-[120px]">
-          <Logo />
-        </Link> */}
       </SidebarHeader>
 
       <SidebarContent className="flex-0">
         <NavMain title="Menu" items={data.nav} />
-      </SidebarContent>
-
-      <SidebarContent className="flex-0 mt-[60px]">
-        <NavMain title="Reference" items={data.navReference} />
       </SidebarContent>
 
       <SidebarFooter className="mt-auto">

@@ -1,4 +1,3 @@
-import { ChartInfoProps } from "@/types/chart.type";
 import Count from "@/components/Count";
 import {
   Card,
@@ -7,7 +6,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-function ColorCheck({ title, description }: ChartInfoProps) {
+function ColorCheck({
+  title,
+  description,
+}: {
+  title?: string;
+  description?: string;
+}) {
   return (
     <Card className="">
       <CardHeader className="items-center pb-0">

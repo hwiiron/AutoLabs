@@ -18,19 +18,6 @@ const breadcrumbMap: Record<string, { main: string; sub?: string }> = {
 
   // ManualMode
   "/manual-mode": { main: "수동모드" },
-
-  // Charts
-  "/dashboard/AllChart": { main: "대시보드", sub: "All Chart" },
-  "/dashboard/AreaChart": { main: "대시보드", sub: "Area Chart" },
-  "/dashboard/BarChart": { main: "대시보드", sub: "Bar Chart" },
-  "/dashboard/LineChart": { main: "대시보드", sub: "Line Chart" },
-  "/dashboard/PieChart": { main: "대시보드", sub: "Pie Chart" },
-  "/dashboard/RadarChart": { main: "대시보드", sub: "Radial Chart" },
-  "/dashboard/RadialChart": { main: "대시보드", sub: "Tooltip Chart" },
-
-  // 3D
-  "/dashboard/GLTF": { main: "대시보드", sub: "GLTF" },
-  "/dashboard/Text": { main: "대시보드", sub: "Text" },
 };
 
 function Header() {
