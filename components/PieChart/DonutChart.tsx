@@ -27,7 +27,7 @@ function DonutChart({
 }: DonutChartProps) {
   const totalVisitors = useMemo(() => {
     return data.reduce((acc, curr) => acc + curr.visitors, 0);
-  }, []);
+  }, [data]);
 
   return (
     <Card className="flex flex-col">

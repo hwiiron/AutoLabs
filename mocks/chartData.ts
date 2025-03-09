@@ -127,9 +127,7 @@ const barLineChartData = [
   { month: "June", desktop: 214 },
 ];
 
-const RadialChartData = [
-  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
-];
+const RadialChartData = [{ visitors: 340 }];
 
 const StackedChartData = [{ month: "january", desktop: 1260, mobile: 570 }];
 

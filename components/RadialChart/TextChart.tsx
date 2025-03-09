@@ -37,7 +37,7 @@ function TextChart({
           <RadialBarChart
             data={RadialChartData}
             startAngle={0}
-            endAngle={250}
+            endAngle={RadialChartData[0].visitors}
             innerRadius={80}
             outerRadius={110}
           >
@@ -48,7 +48,18 @@ function TextChart({
               className="first:fill-muted last:fill-background"
               polarRadius={[86, 74]}
             />
-            <RadialBar dataKey="visitors" background cornerRadius={10} />
+            <RadialBar
+              dataKey="visitors"
+              background
+              cornerRadius={10}
+              fill={
+                Number(
+                  ((RadialChartData[0].visitors * 100) / 360).toFixed(1)
+                ) <= 75
+                  ? "#45C486"
+                  : "#E83030"
+              }
+            />
             <PolarRadiusAxis tick={false} tickLine={false} axisLine={false}>
               <Label
                 content={({ viewBox }) => {
@@ -65,7 +76,11 @@ function TextChart({
                           y={viewBox.cy}
                           className="fill-foreground text-4xl font-bold"
                         >
-                          {RadialChartData[0].visitors.toLocaleString()}
+                          {/* {RadialChartData[0].visitors.toLocaleString()} */}
+                          {((RadialChartData[0].visitors * 100) / 360).toFixed(
+                            1
+                          )}
+                          %
                         </tspan>
                         <tspan
                           x={viewBox.cx}
