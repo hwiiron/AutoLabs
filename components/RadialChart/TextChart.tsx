@@ -82,13 +82,13 @@ function TextChart({
                           )}
                           %
                         </tspan>
-                        <tspan
+                        {/* <tspan
                           x={viewBox.cx}
                           y={(viewBox.cy || 0) + 24}
                           className="fill-muted-foreground"
                         >
                           Visitors
-                        </tspan>
+                        </tspan> */}
                       </text>
                     );
                   }
