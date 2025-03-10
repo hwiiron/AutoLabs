@@ -4,6 +4,7 @@ const data = {
   user: {
     name: "AutoLabs",
     email: "AutoLabs@atlabs.com",
+    avatar: "/avatars/shadcn.jpg",
   },
   users: [
     {
@@ -20,6 +21,7 @@ const data = {
     },
     {
       title: "검수",
+      url: "/auto-mode",
       icon: SquareCheckBig,
       isActive: true,
       items: [
