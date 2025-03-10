@@ -1,15 +1,16 @@
 "use client";
 
-import * as React from "react";
+import Link from "next/link";
+
+import Logo from "@/public/images/icon-logo-gradient.svg";
 import data from "@/mocks/sidebarData";
 import { NavMain } from "@/components/SideBar/nav-main";
 import { NavUser } from "@/components/SideBar/nav-user";
-import { UserSwitcher } from "@/components/SideBar/user-switcher";
 import {
   Sidebar,
+  SidebarHeader,
   SidebarContent,
   SidebarFooter,
-  SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar";
 
@@ -18,17 +19,19 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     <Sidebar
       collapsible="none"
       {...props}
-      className="h-screen sticky top-0 mo:w-[170px]"
+      className="sticky top-0 h-screen mo:w-[170px]"
     >
       <SidebarHeader>
-        <UserSwitcher users={data.users} />
+        <Link href={"/dashboard"} className="relative w-[120px]">
+          <Logo />
+        </Link>
       </SidebarHeader>
 
-      <SidebarContent className="flex-0">
+      <SidebarContent>
         <NavMain title="Menu" items={data.nav} />
       </SidebarContent>
 
-      <SidebarFooter className="mt-auto">
+      <SidebarFooter>
         <NavUser user={data.user} />
       </SidebarFooter>
 

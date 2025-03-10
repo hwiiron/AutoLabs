@@ -10,7 +10,32 @@ const data = {
     {
       name: "AutoBrics",
       logo: User,
-      rank: "CEO",
+      rank: "Admin",
+    },
+    {
+      name: "오윤석",
+      logo: User,
+      rank: "대표",
+    },
+    {
+      name: "유준하",
+      logo: User,
+      rank: "이사",
+    },
+    {
+      name: "이정우",
+      logo: User,
+      rank: "연구원",
+    },
+    {
+      name: "이인수",
+      logo: User,
+      rank: "연구원",
+    },
+    {
+      name: "신휘철",
+      logo: User,
+      rank: "연구원",
     },
   ],
   nav: [

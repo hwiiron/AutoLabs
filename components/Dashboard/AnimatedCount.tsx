@@ -7,13 +7,16 @@ interface AnimatedNumberProps {
   duration?: number;
 }
 
-function Count({ from = 0, to, duration = 1 }: AnimatedNumberProps) {
+function AnimatedCount({ from = 0, to, duration = 1 }: AnimatedNumberProps) {
   const [count, setCount] = useState(from);
 
   useEffect(() => {
-    const controls = setInterval(() => {
-      setCount((prev) => (prev < to ? prev + 1 : to));
-    }, (duration * 1000) / to);
+    const controls = setInterval(
+      () => {
+        setCount((prev) => (prev < to ? prev + 1 : to));
+      },
+      (duration * 1000) / to,
+    );
 
     return () => clearInterval(controls);
   }, [to, duration]);
@@ -29,4 +32,4 @@ function Count({ from = 0, to, duration = 1 }: AnimatedNumberProps) {
   );
 }
 
-export default Count;
+export default AnimatedCount;
