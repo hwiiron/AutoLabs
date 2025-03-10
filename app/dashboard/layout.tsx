@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
-import "@/styles/globals.css";
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/SideBar/app-sidebar";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "AutoBrics - 대시보드",

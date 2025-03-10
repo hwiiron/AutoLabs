@@ -1,12 +1,12 @@
 "use client";
 
-import Header from "@/components/Layout/Header";
-import Container from "@/components/Layout/Container";
+import ColorInspector from "@/components/Dashboard/ColorInspector";
 import DeviceStatus from "@/components/Dashboard/DeviceStatus";
 import FabricInfo from "@/components/Dashboard/FabricInfo";
-import TotalDefectRate from "@/components/Dashboard/TotalDefectRate";
-import ColorInspector from "@/components/Dashboard/ColorInspector";
 import InspectionSummary from "@/components/Dashboard/InspectionSummary";
+import TotalDefectRate from "@/components/Dashboard/TotalDefectRate";
+import Container from "@/components/Layout/Container";
+import Header from "@/components/Layout/Header";
 
 function DashBoardPage() {
   return (

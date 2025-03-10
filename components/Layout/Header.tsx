@@ -1,7 +1,7 @@
 import { CalendarDays } from "lucide-react";
 
-import usersData from "@/mocks/sidebarData";
 import { UserSwitcher } from "@/components/SideBar/user-switcher";
+import usersData from "@/mocks/sidebarData";
 
 function Header() {
   const currentDate = new Date().toLocaleDateString("ko-KR", {

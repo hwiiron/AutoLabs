@@ -2,9 +2,6 @@
 
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 
-import { InspectionSummaryData } from "@/mocks/data";
-import { InspectionSummaryConfig } from "@/mocks/config";
-import { CardHeaderProps } from "@/types/chart.type";
 import {
   Card,
   CardContent,
@@ -19,6 +16,9 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
+import { InspectionSummaryConfig } from "@/mocks/config";
+import { InspectionSummaryData } from "@/mocks/data";
+import { CardHeaderProps } from "@/types/chart.type";
 
 /**
  * @returns {JSX.Element} 원단에서 발생한 염색의 결점 위치를 그래프로 표시하는 카드 컴포넌트

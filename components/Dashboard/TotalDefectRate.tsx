@@ -3,9 +3,6 @@
 import { LabelList, Pie, PieChart } from "recharts";
 
 import { styles } from "@/components/Dashboard/FabricInfo";
-import { TotalDefectRateData } from "@/mocks/data";
-import { TotalDefectRateConfig } from "@/mocks/config";
-import { CardHeaderProps } from "@/types/chart.type";
 import {
   Card,
   CardContent,
@@ -17,6 +14,9 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
+import { TotalDefectRateConfig } from "@/mocks/config";
+import { TotalDefectRateData } from "@/mocks/data";
+import { CardHeaderProps } from "@/types/chart.type";
 
 /**
  * @param {string} props.title - 카드의 제목

@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-import { CardHeaderProps } from "@/types/chart.type";
 import AnimatedCount from "@/components/Dashboard/AnimatedCount";
 import {
   Card,
@@ -7,6 +5,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import { CardHeaderProps } from "@/types/chart.type";
 
 export const styles = {
   gridWrapper: "grid grid-cols-2 gap-4 w-full text-sm mt-[25px] px-[20px]",

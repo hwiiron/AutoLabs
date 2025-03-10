@@ -1,14 +1,14 @@
-import { cn } from "@/lib/utils";
-import { ColorInspectionData } from "@/mocks/data";
-import { CardHeaderProps } from "@/types/chart.type";
-import { styles } from "@/components/Dashboard/FabricInfo";
 import AnimatedCount from "@/components/Dashboard/AnimatedCount";
+import { styles } from "@/components/Dashboard/FabricInfo";
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import { ColorInspectionData } from "@/mocks/data";
+import { CardHeaderProps } from "@/types/chart.type";
 
 /**
  * @param {string} props.title - 카드의 제목

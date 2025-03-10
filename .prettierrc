@@ -9,7 +9,10 @@
   "bracketSameLine": false,
   "arrowParens": "always",
   "endOfLine": "auto",
-  "plugins": ["prettier-plugin-tailwindcss"],
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-organize-imports"
+  ],
   "overrides": [
     {
       "files": "eslint.config.mjs",

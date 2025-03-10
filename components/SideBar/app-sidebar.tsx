@@ -2,17 +2,17 @@
 
 import Link from "next/link";
 
-import Logo from "@/public/images/icon-logo-gradient.svg";
-import data from "@/mocks/sidebarData";
 import { NavMain } from "@/components/SideBar/nav-main";
 import { NavUser } from "@/components/SideBar/nav-user";
 import {
   Sidebar,
-  SidebarHeader,
   SidebarContent,
   SidebarFooter,
+  SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import data from "@/mocks/sidebarData";
+import Logo from "@/public/images/icon-logo-gradient.svg";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (

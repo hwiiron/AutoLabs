@@ -1,13 +1,13 @@
 import { Bot } from "lucide-react";
 
-import { DeviceData } from "@/mocks/data";
-import { CardHeaderProps } from "@/types/chart.type";
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { DeviceData } from "@/mocks/data";
+import { CardHeaderProps } from "@/types/chart.type";
 
 /**
  * @param {string} props.title - 카드의 제목

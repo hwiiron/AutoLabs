@@ -1,4 +1,4 @@
-import { User, LayoutDashboard, SquareCheckBig } from "lucide-react";
+import { LayoutDashboard, SquareCheckBig, User } from "lucide-react";
 
 const data = {
   user: {
