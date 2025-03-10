@@ -44,6 +44,25 @@ const eslintConfig = [
       "tailwindcss/enforces-shorthand": "warn",
       "prettier/prettier": "error",
     },
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "type",
+        ],
+        "newlines-between": "always",
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
+        },
+      },
+    ],
   },
 ];
 

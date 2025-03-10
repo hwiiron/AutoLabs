@@ -1,25 +1,20 @@
+import { AnimatedCountType } from "@/types/chart.type";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-interface AnimatedNumberProps {
-  from?: number;
-  to: number;
-  duration?: number;
-}
-
-function AnimatedCount({ from = 0, to, duration = 1 }: AnimatedNumberProps) {
-  const [count, setCount] = useState(from);
+function AnimatedCount({ to }: AnimatedCountType) {
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const controls = setInterval(
       () => {
         setCount((prev) => (prev < to ? prev + 1 : to));
       },
-      (duration * 1000) / to,
+      (1 * 1000) / to,
     );
 
     return () => clearInterval(controls);
-  }, [to, duration]);
+  }, [to]);
 
   return (
     <motion.span

@@ -1,6 +1,10 @@
-interface CardHeaderProps {
+interface CardHeaderType {
   title: string;
   description: string;
 }
 
-export type { CardHeaderProps };
+interface AnimatedCountType {
+  to: number;
+}
+
+export type { AnimatedCountType, CardHeaderType };

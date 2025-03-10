@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ColorInspectionData } from "@/mocks/data";
-import { CardHeaderProps } from "@/types/chart.type";
+import { CardHeaderType } from "@/types/chart.type";
 
 /**
  * @param {string} props.title - 카드의 제목
@@ -16,7 +16,7 @@ import { CardHeaderProps } from "@/types/chart.type";
  *
  * @returns {JSX.Element} 색상 정밀 검사 결과를 시각적으로 표시하는 카드 컴포넌트
  */
-function ColorInspector({ title, description }: CardHeaderProps) {
+function ColorInspector({ title, description }: CardHeaderType) {
   return (
     <Card className="">
       <CardHeader className="items-center pb-0">

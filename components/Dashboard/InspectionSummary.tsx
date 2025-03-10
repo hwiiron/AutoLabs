@@ -18,12 +18,12 @@ import {
 } from "@/components/ui/chart";
 import { InspectionSummaryConfig } from "@/mocks/config";
 import { InspectionSummaryData } from "@/mocks/data";
-import { CardHeaderProps } from "@/types/chart.type";
+import { CardHeaderType } from "@/types/chart.type";
 
 /**
  * @returns {JSX.Element} 원단에서 발생한 염색의 결점 위치를 그래프로 표시하는 카드 컴포넌트
  */
-function InspectionSummary({ title, description }: CardHeaderProps) {
+function InspectionSummary({ title, description }: CardHeaderType) {
   return (
     <Card>
       <CardHeader className="grid flex-1 text-center sm:text-left">

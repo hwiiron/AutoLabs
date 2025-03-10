@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { CardHeaderProps } from "@/types/chart.type";
+import { CardHeaderType } from "@/types/chart.type";
 
 export const styles = {
   gridWrapper: "grid grid-cols-2 gap-4 w-full text-sm mt-[25px] px-[20px]",
@@ -22,7 +22,7 @@ export const styles = {
  *
  * @returns {JSX.Element} 원단의 기본 정보를 시각적으로 표시하는 카드 컴포넌트
  */
-function FabricInfo({ title, description }: CardHeaderProps) {
+function FabricInfo({ title, description }: CardHeaderType) {
   return (
     <Card>
       <CardHeader className="items-center pb-0">

@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/chart";
 import { TotalDefectRateConfig } from "@/mocks/config";
 import { TotalDefectRateData } from "@/mocks/data";
-import { CardHeaderProps } from "@/types/chart.type";
+import { CardHeaderType } from "@/types/chart.type";
 
 /**
  * @param {string} props.title - 카드의 제목
@@ -24,7 +24,7 @@ import { CardHeaderProps } from "@/types/chart.type";
  *
  * @returns {JSX.Element} 전체 결함률을 시각적으로 표시하는 카드 컴포넌트
  */
-function TotalDefectRate({ title, description }: CardHeaderProps) {
+function TotalDefectRate({ title, description }: CardHeaderType) {
   return (
     <Card className="flex flex-col">
       <div className="flex flex-row items-center justify-center p-6 pb-0">

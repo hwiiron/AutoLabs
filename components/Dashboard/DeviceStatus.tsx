@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { DeviceData } from "@/mocks/data";
-import { CardHeaderProps } from "@/types/chart.type";
+import { CardHeaderType } from "@/types/chart.type";
 
 /**
  * @param {string} props.title - 카드의 제목
@@ -15,7 +15,7 @@ import { CardHeaderProps } from "@/types/chart.type";
  *
  * @returns {JSX.Element} 현재 기기 상태를 시각적으로 표시하는 카드 컴포넌트
  */
-function DeviceStatus({ title, description }: CardHeaderProps) {
+function DeviceStatus({ title, description }: CardHeaderType) {
   return (
     <Card>
       <CardHeader className="items-center pb-0">
