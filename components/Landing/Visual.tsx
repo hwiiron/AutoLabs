@@ -20,7 +20,7 @@ function Visual() {
             {startTyping && (
               <Typewriter
                 words={["Fabric Inspection with AI"]}
-                typeSpeed={80}
+                typeSpeed={60}
               />
             )}
           </h1>
