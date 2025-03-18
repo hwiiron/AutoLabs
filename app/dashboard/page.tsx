@@ -6,12 +6,12 @@ import FabricInfo from "@/components/Dashboard/FabricInfo";
 import InspectionSummary from "@/components/Dashboard/InspectionSummary";
 import TotalDefectRate from "@/components/Dashboard/TotalDefectRate";
 import Container from "@/components/Layout/Container";
-import Header from "@/components/Layout/Header";
+import DashboardHeader from "@/components/Layout/DashboardHeader";
 
 function DashBoardPage() {
   return (
     <>
-      <Header />
+      <DashboardHeader />
 
       <Container>
         <div className="grid auto-rows-min gap-4 md:grid-cols-4">

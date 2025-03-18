@@ -1,12 +1,12 @@
 "use client";
 
 import Container from "@/components/Layout/Container";
-import Header from "@/components/Layout/Header";
+import DashboardHeader from "@/components/Layout/DashboardHeader";
 
 function AutoModePage() {
   return (
     <>
-      <Header />
+      <DashboardHeader />
 
       <Container>자동모드</Container>
     </>
