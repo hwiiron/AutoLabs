@@ -1,7 +1,15 @@
-import ComingSoon from "@/components/ComingSoon";
+"use client";
+
+import Visual from "@/components/Landing/Visual";
+import Header from "@/components/Layout/Header";
 
 function MainPage() {
-  return <ComingSoon />;
+  return (
+    <>
+      <Header />
+      <Visual />
+    </>
+  );
 }
 
 export default MainPage;
