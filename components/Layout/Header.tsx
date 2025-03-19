@@ -7,26 +7,22 @@ const navLinkClass =
 
 const navLinks = [
   {
-    href: "/solution",
+    href: "#solution",
     children: "Solution",
   },
   {
-    href: "/resource",
-    children: "Resource",
-  },
-  {
-    href: "/company",
+    href: "#company",
     children: "Company",
   },
   {
-    href: "/contactus",
-    children: "Contact Us",
+    href: "#team",
+    children: "Team",
   },
 ];
 
 function Header() {
   return (
-    <header className="h-[10vh] flex items-center">
+    <header className="h-[8vh] flex items-center sticky top-0 bg-gradient-to-b from-black via-black/80 to-transparent z-10">
       <Inner className="flex items-center">
         <Link href={"/"} className="block w-[120px]">
           <Logo />

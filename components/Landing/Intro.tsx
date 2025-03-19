@@ -14,7 +14,7 @@ function Intro() {
 
   return (
     <motion.div
-      className="fixed left-0 top-0 z-[3] flex h-screen w-full items-center justify-center bg-black"
+      className="fixed left-0 top-0 z-[3] flex h-screen w-full items-center justify-center bg-black overflow-hidden"
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
       transition={{ delay: 1, duration: 1, ease: "easeOut" }}
