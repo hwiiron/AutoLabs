@@ -24,7 +24,7 @@ function Footer() {
             <dd className="ml-[6px]">오윤석</dd>
           </dl>
 
-          <span className={classNames(barClass)} />
+          {/* <span className={classNames(barClass)} />
 
           <dl className="flex">
             <dt>TEL.</dt>
@@ -59,7 +59,7 @@ function Footer() {
             <dd className="ml-[6px]">
               <address className="not-italic">대한민국 (우: 000000)</address>
             </dd>
-          </dl>
+          </dl> */}
 
           <hr className={classNames(lineClass)} />
 
