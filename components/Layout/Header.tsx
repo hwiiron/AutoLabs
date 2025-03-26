@@ -18,6 +18,10 @@ const navLinks = [
     href: "#team",
     children: "Team",
   },
+  {
+    href: "#contactus",
+    children: "Contact Us",
+  },
 ];
 
 function Header() {
