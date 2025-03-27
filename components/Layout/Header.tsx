@@ -7,12 +7,12 @@ const navLinkClass =
 
 const navLinks = [
   {
-    href: "#solution",
-    children: "Solution",
-  },
-  {
     href: "#company",
     children: "Company",
+  },
+  {
+    href: "#solution",
+    children: "Solution",
   },
   {
     href: "#team",
