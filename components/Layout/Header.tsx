@@ -3,7 +3,7 @@ import Logo from "@/public/images/icon-logo-white.svg";
 import Link from "next/link";
 
 const navLinkClass =
-  "relative before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-teal-600 before:transition-all before:duration-300 hover:before:w-full";
+  "relative before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full";
 
 const navLinks = [
   {
