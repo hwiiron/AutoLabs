@@ -25,7 +25,11 @@ function VisualSection() {
         </div>
 
         <div className="w-[1000px] h-full absolute top-0 right-0">
-          <Spline scene="https://prod.spline.design/DaPV8UcLkUQRqirI/scene.splinecode" />
+          {/* 분홍색 */}
+          {/* <Spline scene="https://prod.spline.design/DaPV8UcLkUQRqirI/scene.splinecode" /> */}
+
+          {/* 녹색 */}
+          <Spline scene="https://prod.spline.design/xm9CpfRLRajLZVSf/scene.splinecode" />
         </div>
       </Inner>
     </section>
